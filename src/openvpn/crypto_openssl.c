@@ -1391,7 +1391,7 @@ ssl_tls1_PRF(const uint8_t *seed, int seed_len, const uint8_t *secret,
         goto out;
     }
 
-    if (!EVP_PKEY_CTX_set_tls1_prf_md(pctx, EVP_sha256()))
+    if (!EVP_PKEY_CTX_set_tls1_prf_md(pctx, EVP_sha2()))
     {
         goto out;
     }
